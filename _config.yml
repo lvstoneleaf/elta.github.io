@@ -1,1 +1,23 @@
-theme: jekyll-theme-hacker
+markdown: redcarpet
+permalink: /:categories/:title.html
+url: 
+lsi: false
+pygments: true
+safe: true
+auto: false 
+
+paginate: 8
+paginate_path: "page:num"
+
+# presonal config
+title: Elta's Blog
+description: Elta's Blog, powered by Jekyll...
+author: Dongxue Zhang
+
+seo: 
+  keyword: 
+  description: 
+config:
+  js_dir:
+  img_dir:
+  css_dir:
