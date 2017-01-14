@@ -11,17 +11,27 @@ function commitAll()
 	rm -rf ${CI_MSG}
 }
 
+function pushRepo()
+{
+	git push
+}
 
 
 case $1 in
 	all)
-		echo "All"
+		echo "All step"
+		$0 ci
+		$0 push
 		;;
 	ci)
 		echo "Commit all"
 		commitAll
 		;;
+	push)
+		echo "Push"
+		$0 pushRepo
+		;;
 	*)
-		echo "Fall down"
+		$0 all
 		;;
 esac
