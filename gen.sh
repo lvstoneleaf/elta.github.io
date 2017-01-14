@@ -3,6 +3,23 @@
 CI_MSG=.ci.msg
 DATA=$(date +%Y-%m-%d)
 
+MD_EDITOR=macdown
+
+function run()
+{
+	if [ "x"$1 == "x" ]; then
+		echo "Nothing to run"
+		exit 1
+	fi
+
+	$*
+
+	if [ $? != 0 ]; then
+		echo "$* error"
+		exit 1;
+	fi
+}
+
 function newFile()
 {
 	NEW_FILE=${DATA}-$1.md
@@ -13,6 +30,8 @@ function newFile()
 	fi
 
 	echo "New file is ${NEW_FILE}"
+	cp utils/default.md _posts/${NEW_FILE}
+	run ${MD_EDITOR} _posts/${NEW_FILE}
 }
 
 
