@@ -32,11 +32,11 @@ function insertDefaultMsg()
 	touch ${NEW_FILE}
     echo '---'                                >> ${NEW_FILE}
     echo 'layout: post'                       >> ${NEW_FILE}
-    echo 'category: "default"'                >> ${NEW_FILE}
+    echo 'category: "Default"'                >> ${NEW_FILE}
     echo 'description: ""'                    >> ${NEW_FILE}
     echo 'title:  "Blog 文章的基本模版"'      >> ${NEW_FILE}
     echo "date: ${DATE}"                      >> ${NEW_FILE}
-    echo 'tags: [default]'                      >> ${NEW_FILE}
+    echo 'tags: [Default]'                      >> ${NEW_FILE}
     echo '---'                                >> ${NEW_FILE}
     echo 'Blog 文章的基本模版示例'            >> ${NEW_FILE}
     echo ''                                   >> ${NEW_FILE}
