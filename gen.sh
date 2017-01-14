@@ -20,9 +20,32 @@ function run()
 	fi
 }
 
+function insertDefaultMsg()
+{
+	if [ "$1x" == "x" ]; then
+		echo "No file name!!"
+		exit 1
+	fi
+
+	NEW_FILE=$1
+
+	touch ${NEW_FILE}
+    echo '---'                                >> ${NEW_FILE}
+    echo 'layout: post'                       >> ${NEW_FILE}
+    echo 'category: "example"'                >> ${NEW_FILE}
+    echo 'description: ""'                    >> ${NEW_FILE}
+    echo 'title:  "Blog 文章的基本模版"'      >> ${NEW_FILE}
+    echo 'date: 2011-09-01'                   >> ${NEW_FILE}
+    echo 'tags: [linux]'                      >> ${NEW_FILE}
+    echo '---'                                >> ${NEW_FILE}
+    echo 'Blog 文章的基本模版示例'            >> ${NEW_FILE}
+    echo ''                                   >> ${NEW_FILE}
+    echo '### 示例'                           >> ${NEW_FILE}
+}
+
 function newFile()
 {
-	NEW_FILE=${DATA}-$1.md
+	NEW_FILE=_post/${DATA}-$1.md
 
 	if [ "$1x" == "x" ]; then
 		echo "No file name!!"
@@ -30,8 +53,8 @@ function newFile()
 	fi
 
 	echo "New file is ${NEW_FILE}"
-	cp utils/default.md _posts/${NEW_FILE}
-	run ${MD_EDITOR} _posts/${NEW_FILE}
+	insertDefaultMsg ${NEW_FILE}
+	run ${MD_EDITOR} ${NEW_FILE}
 }
 
 
