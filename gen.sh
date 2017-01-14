@@ -1,7 +1,7 @@
 #! /bin/bash
 
 CI_MSG=.ci.msg
-DATA=$(date +%Y-%m-%d)
+DATE=$(date +%Y-%m-%d)
 
 MD_EDITOR=macdown
 
@@ -35,7 +35,7 @@ function insertDefaultMsg()
     echo 'category: "example"'                >> ${NEW_FILE}
     echo 'description: ""'                    >> ${NEW_FILE}
     echo 'title:  "Blog 文章的基本模版"'      >> ${NEW_FILE}
-    echo 'date: 2011-09-01'                   >> ${NEW_FILE}
+    echo "date: ${DATE}"                      >> ${NEW_FILE}
     echo 'tags: [linux]'                      >> ${NEW_FILE}
     echo '---'                                >> ${NEW_FILE}
     echo 'Blog 文章的基本模版示例'            >> ${NEW_FILE}
@@ -45,7 +45,7 @@ function insertDefaultMsg()
 
 function newFile()
 {
-	NEW_FILE=_post/${DATA}-$1.md
+	NEW_FILE=_posts/${DATE}-$1.md
 
 	if [ "$1x" == "x" ]; then
 		echo "No file name!!"
@@ -62,7 +62,7 @@ function commitAll()
 {
 	git st -s        > ${CI_MSG}
     cat ${CI_MSG} | awk '{ print $2 }' | xargs git add
-	echo "${DATA}"  >> ${CI_MSG}
+	echo "${DATE}"  >> ${CI_MSG}
 	git commit -F  ${CI_MSG}
 	rm -rf ${CI_MSG}
 }
@@ -94,6 +94,16 @@ case $1 in
 		fi
 		echo "Create New file $2"
 		newFile $2
+		;;
+	edit)
+		if [ "$2x" == "x" ]; then
+			echo "No file name!!"
+			exit 1
+		fi
+		${MD_EDITOR} $2
+		;;
+	test)
+		echo "${DATE}"
 		;;
 	*)
 		$0 all
