@@ -2,11 +2,9 @@
                 <ul class="list-unstyled">
 
 {% for tag in site.tags %} 
-       <li>
 		   <a href="/tags.html#{{ tag[0]}} ">
            {{ tag[0]}} 
-         </a>
-       </li>
+         </a>, &nbsp; &nbsp;
 {% endfor %} 
 
 
