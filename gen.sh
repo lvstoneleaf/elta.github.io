@@ -32,5 +32,6 @@ case $1 in
 		pushRepo
 		;;
 	*)
+		$0 all
 		;;
 esac
