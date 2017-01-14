@@ -1,6 +1,20 @@
 #! /bin/bash
 
 CI_MSG=.ci.msg
+DATA=$(date +%Y-%m-%d)
+
+function newFile()
+{
+	NEW_FILE=${DATA}-$1.md
+
+	if [ "$1x" == "x" ]; then
+		echo "No file name!!"
+		exit 1
+	fi
+
+	echo "New file is ${NEW_FILE}"
+}
+
 
 function commitAll()
 {
@@ -30,6 +44,14 @@ case $1 in
 	push)
 		echo "Push"
 		pushRepo
+		;;
+	new)
+		if [ "$2x" == "x" ]; then
+			echo "No file name!!"
+			exit 1
+		fi
+		echo "Create New file $2"
+		newFile $2
 		;;
 	*)
 		$0 all
