@@ -17,9 +17,12 @@ layout: default
 
 <br/>
 分类：&nbsp; 
-<a href="/categories.html#{{ page.category }} ">
-	{{ page.category }} 
 </a>
+{% for cat in page.category %} 
+<a href="/categories.html#{{ page.category }} ">
+	{{ cat }} 
+</a>,
+{% endfor %} 
 <br/>
 标签：&nbsp;
 {% for tag in page.tags %} 
