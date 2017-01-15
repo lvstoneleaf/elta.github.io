@@ -2,6 +2,7 @@
 
 CI_MSG=.ci.msg
 DATE=$(date +%Y-%m-%d)
+# DATE=$(date +%Y-%m-%d-%H-%M-%S)
 
 MD_EDITOR=macdown
 
