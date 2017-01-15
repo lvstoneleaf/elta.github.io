@@ -14,7 +14,13 @@ layout: default
 <hr>
 {{ content }}
 <br/>
-{{ page.tags }}
+标签：&nbsp;
+{% for tag in page.tags %} 
+		   <a href="/tags.html#{{ tag[0]}} ">
+           {{ tag[0]}} 
+         </a>,
+{% endfor %} 
+
 <br/>
 <div style="margin-top:10px;margin-bottom:10px">
   {%if page.previous%}
