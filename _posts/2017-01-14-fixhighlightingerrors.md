@@ -3,7 +3,7 @@ layout: post
 category: "Default"
 description: ""
 title:  "Github 博客，修复高亮错误"
-date: 2017-01-14-09-50-00
+date: 2017-01-14 09:50:00+00:00
 tags: [Github, Highlighter]
 ---
 
