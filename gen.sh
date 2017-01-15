@@ -60,6 +60,10 @@ function newFile()
 
 function commitAll()
 {
+	echo "Update repos"
+	git pull
+
+	echo "Commit local changes"
 	git st -s        > ${CI_MSG}
     cat ${CI_MSG} | awk '{ print $2 }' | xargs git add
 	echo "${DATE}"  >> ${CI_MSG}
