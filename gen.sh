@@ -1,8 +1,8 @@
 #! /bin/bash
 
 CI_MSG=.ci.msg
-DATE=$(date +"%Y-%m-%d %H:%M:%S+00:00")
-# DATE=$(date +%Y-%m-%d)
+POSTDATE=$(date +"%Y-%m-%d %H:%M:%S+00:00")
+CDATE=$(date +%Y-%m-%d)
 # DATE=$(date +%Y-%m-%d-%H-%M-%S)
 
 MD_EDITOR=macdown
@@ -36,18 +36,16 @@ function insertDefaultMsg()
     echo 'layout: post'                       >> ${NEW_FILE}
     echo 'category: "Default"'                >> ${NEW_FILE}
     echo 'description: ""'                    >> ${NEW_FILE}
-    echo 'title:  "Blog 文章的基本模版"'      >> ${NEW_FILE}
-    echo "date: ${DATE}"                      >> ${NEW_FILE}
-    echo 'tags: [Default]'                      >> ${NEW_FILE}
+    echo 'title:  "标题"'                     >> ${NEW_FILE}
+    echo "date: ${POSTDATE}"                  >> ${NEW_FILE}
+    echo 'tags: [Default]'                    >> ${NEW_FILE}
     echo '---'                                >> ${NEW_FILE}
-    echo 'Blog 文章的基本模版示例'            >> ${NEW_FILE}
     echo ''                                   >> ${NEW_FILE}
-    echo '### 示例'                           >> ${NEW_FILE}
 }
 
 function newFile()
 {
-	NEW_FILE=_posts/${DATE}-$1.md
+	NEW_FILE=_posts/${CDATE}-$1.md
 
 	if [ "$1x" == "x" ]; then
 		echo "No file name!!"
@@ -68,7 +66,7 @@ function commitAll()
 	echo "Commit local changes"
 	git st -s        > ${CI_MSG}
     cat ${CI_MSG} | awk '{ print $2 }' | xargs git add
-	echo "${DATE}"  >> ${CI_MSG}
+	echo "${POSTDATE}"  >> ${CI_MSG}
 	git commit -F  ${CI_MSG}
 	rm -rf ${CI_MSG}
 }
@@ -109,7 +107,7 @@ case $1 in
 		${MD_EDITOR} $2
 		;;
 	test)
-		echo "${DATE}"
+		echo "${POSTDATE}"
 		;;
 	*)
 		$0 all
