@@ -1,7 +1,7 @@
 #! /bin/bash
 
 CI_MSG=.ci.msg
-DATE=$(date +%Y-%m-%d HH:MM:SS+00:00)
+DATE=$(date +%Y-%m-%d %H:%M:%S+00:00)
 # DATE=$(date +%Y-%m-%d)
 # DATE=$(date +%Y-%m-%d-%H-%M-%S)
 
