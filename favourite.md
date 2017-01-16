@@ -41,3 +41,8 @@ title: 我的收藏
 
 #### QEMU
 TO BE CONTINUE
+
+### 机器学习（人工智能）
+#### TensorFlow
+1. [极客学院，中文文档](http://wiki.jikexueyuan.com/project/tensorflow-zh/)
+2. [TensorFlow中文社区](http://www.tensorfly.cn/)
