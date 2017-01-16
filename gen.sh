@@ -64,9 +64,16 @@ function commitAll()
 	git pull
 
 	echo "Commit local changes"
-	git st -s        > ${CI_MSG}
+	echo ""          > ${CI_MSG}
+	git st -s       >> ${CI_MSG}
     cat ${CI_MSG} | awk '{ print $2 }' | xargs git add
-	echo "${POSTDATE}"  >> ${CI_MSG}
+
+	run cp ${CI_MSG} ${CI_MSG}.tmp
+	echo ${POSTDATE}  > ${CI_MSG}
+	echo ""          >> ${CI_MSG}
+	cat ${CI_MSG}.tmp >> ${CI_MSG}
+	rm -rf ${CI_MSG}.tmp
+
 	git commit -F  ${CI_MSG}
 	rm -rf ${CI_MSG}
 }

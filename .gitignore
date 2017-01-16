@@ -1,3 +1,4 @@
 .ci.msg
 *.swp
 .DS_Store
+*.tmp
