@@ -1,4 +1,4 @@
-permalink: /:categories/:favourite/:title.html
+permalink: /:categories/:title.html
 url: 
 lsi: false
 pygments: true
