@@ -1,4 +1,4 @@
-permalink: /:categories/:title.html
+permalink: /:categories/:favourite/:title.html
 url: 
 lsi: false
 pygments: true
@@ -17,8 +17,8 @@ description: Elta's Blog, powered by Jekyll...
 author: Dongxue Zhang
 
 seo: 
-  keyword: 
-  description: 
+  keyword: elta era
+  description: elta's blog
 config:
   js_dir:
   img_dir:
