@@ -16,6 +16,8 @@ title: 我的收藏
 4. [yalu + mach_portal
  for iOS 8_4_1 iOS 10_(1(_1))](https://yalu.qwertyoruiop.com)
 5. [Trident: iOS 9 Jalbreak](https://github.com/benjamin-42/Trident)
+6. [iOS 安全攻防](http://www.cnblogs.com/jailbreaker/category/636650.html)
+7. [蒸米spark: 冰与火之歌](https://github.com/zhengmin1989/iOS_ICE_AND_FIRE)
 
 #### 源码
 
