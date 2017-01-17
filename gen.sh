@@ -7,6 +7,7 @@ CDATE=$(date +%Y-%m-%d)
 
 MD_EDITOR=macdown
 
+
 function run()
 {
 	if [ "x"$1 == "x" ]; then
