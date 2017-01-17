@@ -58,3 +58,8 @@ TO BE CONTINUE
 
 1. [极客学院，中文文档](http://wiki.jikexueyuan.com/project/tensorflow-zh/)
 2. [TensorFlow中文社区](http://www.tensorfly.cn/)
+
+### 下载
+
+#### JDK
+[JDK 8 for MAC](https://pan.baidu.com/s/1jH70nOU)
