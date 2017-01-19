@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "Tools"
-description: ""
+description: "在 macos 上安装 homebrew 的方法，用于将 homebrew 安装到用户目录下"
 title:  "MacOS 安装 brew"
 date: 2017-01-16 13:35:20+00:00
 tags: [Brew, MacOS]

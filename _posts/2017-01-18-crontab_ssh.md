@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "Linux"
-description: ""
+description: "Could not create directory '/home/server/.ssh'问题的分析与解决"
 title:  "Crontab could not create directory .ssh"
 date: 2017-01-18 20:45:44+00:00
 tags: [Linux, crontab, ssh， 运维]
