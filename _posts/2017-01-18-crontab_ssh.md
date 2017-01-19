@@ -4,7 +4,7 @@ category: "Linux"
 description: "Could not create directory '/home/server/.ssh'问题的分析与解决"
 title:  "Crontab could not create directory .ssh"
 date: 2017-01-18 20:45:44+00:00
-tags: [Linux, crontab, ssh， 运维]
+tags: [Linux, crontab, ssh, 运维]
 ---
 
 最近在利用 crontab 构建自动备份时，遇到了一个问题。我的脚本中包含了用于服务器用户切换使用的 ssh 命令。当我登录到服务器上时，脚本执行正常；当我没有登录到服务器上时，脚本执行失败，错误提示是：
