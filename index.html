@@ -5,8 +5,13 @@ description: "Elta's blog, enjoy world, touch anything! Try everything!"
 ---
 
 <!-- Loop output paged posts -->
-{% for post in paginator.posts %}
+<hr>
 <h1>
+	博文列表
+</h1>
+<hr>
+{% for post in paginator.posts %}
+<h2>
   <a href="{{ post.url }}">
     {{ post.title }}
   </a> 
@@ -14,7 +19,7 @@ description: "Elta's blog, enjoy world, touch anything! Try everything!"
 	<span class="glyphicon glyphicon-time"></span>
 	{{ post.date | date_to_string }}
   </div>
-</h1>
+</h2>
 <hr>
 {{ post.excerpt }}
 	<p> <a href="{{ post.url }}"><span >阅读全文 &raquo; </span></a></p>
