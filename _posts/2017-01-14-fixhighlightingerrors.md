@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "Default"
-description: ""
+description: "修复 github 博客的关于 highlighter 警告的错误信息"
 title:  "Github 博客，修复高亮错误"
 date: 2017-01-14 09:50:00+00:00
 tags: [Github, Highlighter]
