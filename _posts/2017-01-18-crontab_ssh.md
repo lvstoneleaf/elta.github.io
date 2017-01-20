@@ -107,3 +107,5 @@ server@gitlabserver:~$ ls -a
 因为服务器用户目录是经过了 “ecryptfs” 加密，所以在没有登录和登录后不一样。知道了这一点，解决自动登录到方法也就变得简单了：<b>将用户目录中的 .ssh 目录拷贝到卸载后的用户目录中。</b>
 
 经过上述的拷贝，自动执行的脚本终于可以顺利执行了，问题圆满解决。
+
+我在 stackoverflow 上回答了这个问题。自己记录一下，看看是不是能帮到别人: [stackoverflow](http://stackoverflow.com/questions/14073389/rsync-code-will-run-but-not-in-cron/41756857#41756857)
