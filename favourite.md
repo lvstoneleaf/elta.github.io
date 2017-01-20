@@ -54,7 +54,7 @@ title: 我的收藏
 
 #### QEMU
 
-[QEMU - 韦任的 Wiki 百科](http://people.cs.nctu.edu.tw/~chenwj/dokuwiki/doku.php?id=qemu)
+1. [QEMU - 韦任的 Wiki 百科](http://people.cs.nctu.edu.tw/~chenwj/dokuwiki/doku.php?id=qemu)
 TO BE CONTINUE
 
 ### 机器学习（人工智能）
