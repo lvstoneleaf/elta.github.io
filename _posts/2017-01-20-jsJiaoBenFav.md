@@ -4,7 +4,7 @@ category: "Default"
 description: "利用js脚本创建收藏夹快捷方式，完成批量操作"
 title:  "利用js脚本实现页面操作"
 date: 2017-01-20 13:54:58+00:00
-tags: [Default]
+tags: [javascript, shell]
 ---
 
 通常来讲，想要用 js ( Javascript ) 脚本实现页面操作，可以通过建立浏览器插件，进行 js 脚本的调用，完成对页面的本地操作。

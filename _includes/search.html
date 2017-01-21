@@ -20,7 +20,7 @@ function prepareForSubmit()
 	var skey=document.getElementById("searchkey").value;    
 	var searchStr = "site:" + site + " " + skey;
 
-	document.getElementById("q").value = searchStr;
+	document.getElementById("q").val(searchStr);
 
 	document.getElementById("searchform").submit();    
 }
