@@ -1,25 +1,11 @@
-<script>
-function prepareForSubmit()
-{
-	var site=document.getElementById("sitesearch").value;    
-	var skey=document.getElementById("searchkey").value;    
-	var searchStr = "site:" + site + " " + skey;
-
-	console.log(searchStr);
-	document.getElementById("q").value = searchStr;
-	alert(document.getElementById("q").value);
-
-}
-</script>
-
 <form id="searchform" action="https://www.bing.com/search" method="get">
   <div class="input-group">
     <input type="text" name="searchkey" class="form-control">
-	<input type="hidden" name="q" value="site:www.eltaera.com " />
+	<input type="hidden" name="q" value="" />
 	<input type="hidden" name="ie" value="UTF-8" />
 	<input type="hidden" name="sitesearch" value="www.eltaera.com" />
     <span class="input-group-btn">
-      <button class="" onclick="prepareForSubmit()">
+      <button class="btn btn-default" type="submit">
         <span class="glyphicon glyphicon-search">
         </span>
       </button>
