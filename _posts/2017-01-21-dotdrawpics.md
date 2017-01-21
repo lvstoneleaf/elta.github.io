@@ -69,7 +69,7 @@ tags: [dot, graphviz]
 
 我们通过运行 make，完成编译，产生的图像如下：
 
-![test.svg](https://github.com/elta/elta.github.io/blob/master/imgs/2017-01-21-test.svg)
+![test.svg](http://www.eltaera.com//imgs/2017-01-21-test.svg)
 
 ## 层级
 
@@ -148,7 +148,7 @@ tags: [dot, graphviz]
 
 图片如下：
 
-![redmine工作状态轮转图](https://github.com/elta/elta.github.io/blob/master/imgs/2017-01-21-projm.svg)
+![redmine工作状态轮转图](http://www.eltaera.com//imgs/2017-01-21-projm.svg)
 
 上述图中，我们使用了多组子图。子图的简单调用方法是：
 
