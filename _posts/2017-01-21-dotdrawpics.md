@@ -147,6 +147,7 @@ tags: [dot, graphviz]
     }
 
 图片如下：
+
 ![redmine工作状态轮转图](http://elta.github.io/imgs/2017-01-21-projm.svg)
 
 上述图中，我们使用了多组子图。子图的简单调用方法是：
