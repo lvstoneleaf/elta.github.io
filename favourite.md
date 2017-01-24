@@ -18,6 +18,7 @@ title: 我的收藏
 5. [Trident: iOS 9 Jalbreak](https://github.com/benjamin-42/Trident)
 6. [iOS 安全攻防](http://www.cnblogs.com/jailbreaker/category/636650.html)
 7. [蒸米spark: 冰与火之歌](https://github.com/zhengmin1989/iOS_ICE_AND_FIRE)
+8. [ideviceinstaller](https://github.com/libimobiledevice/ideviceinstaller.git)
 
 #### 源码
 
