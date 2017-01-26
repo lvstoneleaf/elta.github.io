@@ -28,10 +28,10 @@ tags: [4s, downgrade]
 我们需要进行的操作步骤是：
 
 1. 安装 Trident-kloader 程序，点击一次 start 按钮进行运行，之后等待手机苹果花屏一下。start 按钮点且只点一次，请谨记。点击完成，屏幕花屏一下之后，屏幕上应该会显示 w00t root，此时手机处于了已越狱 + kloader 加载完毕的状态。
-2. 使用 idevicediagnostics 中的 idevicediagnostics 命令，执行  
+2. 使用 idevicediagnostics 中的 idevicediagnostics 命令，执行    
 ```
 idevicediagnostics.exe sleep
-```
+```  
 3. 待到设备黑屏，按几下home键。如果设备屏幕没有亮，此时设备应当处于了 DFU 模式。如果屏幕亮了，请关机重启，返回步骤 1 进行执行。
 4. 设备进入 DFU 模式后，使用 idevicediagnostics 工具中的 idevicerestore.exe 工具，执行  
 ```
