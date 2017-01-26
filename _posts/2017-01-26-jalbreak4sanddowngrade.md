@@ -290,6 +290,7 @@ hosts 文件位置：
 ```
 C:\Windows\System32\Drivers\etc\hosts
 ```
+
 ## 参考信息及致谢：
 
 感谢 Trident 越狱工具制作者：[工具地址](https://github.com/benjamin-42/Trident)
