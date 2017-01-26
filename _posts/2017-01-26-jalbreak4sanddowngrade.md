@@ -7,6 +7,7 @@ date: 2017-01-26 10:26:00+00:00
 tags: [4s, downgrade]
 ---
 
+## 简介
 最近 iPhone 4s 9.x 系列的越狱工具 Trident 出来了，对于非 9.3.5 的 4s 用户来说又迎来了降级 6.1.3 的机会。
 
 在威锋上看到已经有人做出了新的降级教程，心痒难耐，果断把自己的 4s 掏出来，试着开始降级。
@@ -17,26 +18,27 @@ tags: [4s, downgrade]
 
 我们需要的工具有：
 
+```
 1. Trident-kloader.ipa
 2. idevicediagnostics for windows
 3. fistmedaddy.ipsw
+```
 
-所以我们需要进行的操作步骤是：
+## 具体步骤
+我们需要进行的操作步骤是：
 
 1. 安装 Trident-kloader 程序，点击一次 start 按钮进行运行，之后等待手机苹果花屏一下。start 按钮点且只点一次，请谨记。点击完成，屏幕花屏一下之后，屏幕上应该会显示 w00t root，此时手机处于了已越狱 + kloader 加载完毕的状态。
 2. 使用 idevicediagnostics 中的 idevicediagnostics 命令，执行
-
 ```
 idevicediagnostics.exe sleep
 ```
-
 3. 待到设备黑屏，按几下home键。如果设备屏幕没有亮，此时设备应当处于了 DFU 模式。如果屏幕亮了，请关机重启，返回步骤 1 进行执行。
-4. 设备进入 DFU 模式后，使用 idevicediagnostics 工具中的 idevicerestore.exe 工具，执行：
-
+4. 设备进入 DFU 模式后，使用 idevicediagnostics 工具中的 idevicerestore.exe 工具，执行
 ```
 idevicerestore.exe -e ..\fistmedaddy.ipsw
-```
-然后可以看到以下 log 信息：
+```  
+然后可以看到以下 log 信息:
+
 ```
 C:\odysseusOTA4WIN\未命名文件夹 3\idevicerestore for Windows>idevicerestore.exe
 -e ..\fistmedaddy.ipsw
@@ -210,10 +212,11 @@ DONE
 
 最终出现 DONE 后，手机会进入恢复模式，可以看到界面变成了 6.1.3 的样子。等待恢复完成，成功的回到了 6.1.3 系统。
 
-注意事项：
+## 注意事项：
 
 1. Trident-kloader 我是从源码编译的，最初几次点完了现象不正常，可能是因为我安装了多个 Trident。最后只剩下一个 Trident-kloader 的时候，关机-开机-运行 Trident-kloader 执行后，成功了。成功的效果就是屏幕右侧花了一下，其它并没有任何异常。
 2. 在执行 restore  的时候，最开始一直会报错，错误信息如下：
+
 ```
 C:\odysseusOTA4WIN\未命名文件夹 3\idevicerestore for Windows>idevicerestore.exe
 -e ..\fistmedaddy.ipsw
@@ -287,15 +290,15 @@ hosts 文件位置：
 ```
 C:\Windows\System32\Drivers\etc\hosts
 ```
-参考信息及致谢：
+## 参考信息及致谢：
 
-感谢 Trident 越狱工具制作者，[工具地址](https://github.com/benjamin-42/Trident)
+感谢 Trident 越狱工具制作者：[工具地址](https://github.com/benjamin-42/Trident)
 
-感谢 Trident + kloader 工具制作者，[工具地址](https://github.com/ganoninc/trident-kloader-updated)
+感谢 Trident + kloader 工具制作者：[工具地址](https://github.com/ganoninc/trident-kloader-updated)
 
-感谢 <b>极端阴险</b> 在威锋上提供的越狱降级教程 [原创开发-v1.0.2.5更新 English version [For iPad2]-(Mac/Win)iPhone4s/iPad2 iOS9](https://bbs.feng.com/forum.php?mod=viewthread&tid=10998777&extra=page%3D1)
+感谢 <b>极端阴险</b> 在威锋上提供的越狱降级教程：[原创开发-v1.0.2.5更新 English version [For iPad2]-(Mac/Win)iPhone4s/iPad2 iOS9](https://bbs.feng.com/forum.php?mod=viewthread&tid=10998777&extra=page%3D1)
 
-感谢 <b>hogan_wang</b> 在威锋上提供的 restore 错误信息解决方法 [解决降级ERROR：Unable to send TSS、ERROR unable to get SHSH blobs for ...](http://bbs.feng.com/read-htm-tid-9678225.html)
+感谢 <b>hogan_wang</b> 在威锋上提供的 restore 错误信息解决方法：[解决降级ERROR：Unable to send TSS、ERROR unable to get SHSH blobs for ...](http://bbs.feng.com/read-htm-tid-9678225.html)
 
 
  
