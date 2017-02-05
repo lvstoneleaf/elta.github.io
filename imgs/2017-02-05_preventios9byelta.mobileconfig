@@ -10,61 +10,61 @@
 	<key>PayloadContent</key>
 	<array>
 		<dict>
-				<key>PayloadContent</key>
-				<array>
+			<key>PayloadContent</key>
+			<array>
+				<dict>
+					<key>DefaultsData</key>
 					<dict>
-						<key>DefaultsDomainName</key>
-						<string>.GlobalPreferences</string>
-						<key>DefaultsData</key>
-						<dict>
-							<key>SeedGroup</key>
-							<string>PublicBeta</string>
-						</dict>
+						<key>SeedGroup</key>
+						<string>PublicBeta</string>
 					</dict>
+					<key>DefaultsDomainName</key>
+					<string>.GlobalPreferences</string>
+				</dict>
+				<dict>
+					<key>DefaultsData</key>
 					<dict>
-						<key>DefaultsDomainName</key>
-						<string>com.apple.seeding</string>
-						<key>DefaultsData</key>
-						<dict>
-							<key>SeedProgram</key>
-							<string>DeveloperSeed</string>
-						</dict>
+						<key>SeedProgram</key>
+						<string>DeveloperSeed</string>
 					</dict>
+					<key>DefaultsDomainName</key>
+					<string>com.apple.seeding</string>
+				</dict>
+				<dict>
+					<key>DefaultsData</key>
 					<dict>
-						<key>DefaultsDomainName</key>
-						<string>com.apple.appleseed.FeedbackAssistant</string>
-						<key>DefaultsData</key>
-						<dict>
-							<key>SBIconVisibility</key>
-							<true/>
-						</dict>
+						<key>SBIconVisibility</key>
+						<true/>
 					</dict>
+					<key>DefaultsDomainName</key>
+					<string>com.apple.appleseed.FeedbackAssistant</string>
+				</dict>
+				<dict>
+					<key>DefaultsData</key>
 					<dict>
-						<key>DefaultsDomainName</key>
-						<string>com.apple.MobileAsset</string>
-						<key>DefaultsData</key>
-						<dict>
-							<key>MobileAssetSUAllowOSVersionChange</key>
-							<false/>
-							<key>MobileAssetSUAllowSameVersionFullReplacement</key>
-							<false/>
-							<key>MobileAssetServerURL-com.apple.MobileAsset.SoftwareUpdate</key>
-							<string>http://mesu.apple.com/assets/tvOSDeveloperSeed</string>
-							<key>MobileAssetServerURL-com.apple.MobileAsset.MobileSoftwareUpdate.UpdateBrain</key>
-							<string>http://mesu.apple.com/assets/tvOSDeveloperSeed</string>
-						</dict>
+						<key>MobileAssetSUAllowOSVersionChange</key>
+						<false/>
+						<key>MobileAssetSUAllowSameVersionFullReplacement</key>
+						<false/>
+						<key>MobileAssetServerURL-com.apple.MobileAsset.MobileSoftwareUpdate.UpdateBrain</key>
+						<string>http://mesu.apple.com/assets/tvOSDeveloperSeed</string>
+						<key>MobileAssetServerURL-com.apple.MobileAsset.SoftwareUpdate</key>
+						<string>http://mesu.apple.com/assets/tvOSDeveloperSeed</string>
 					</dict>
-				</array>
+					<key>DefaultsDomainName</key>
+					<string>com.apple.MobileAsset</string>
+				</dict>
+			</array>
 			<key>PayloadDescription</key>
 			<string>配置访问限制</string>
 			<key>PayloadDisplayName</key>
 			<string>访问限制</string>
 			<key>PayloadIdentifier</key>
-			<string>com.apple.applicationaccess.B0CD22D7-C70E-4916-AD0F-87C4A2B45BA9</string>
+			<string>com.apple.applicationaccess.2A7D875A-212C-4BED-8F2D-2072D1DDC140</string>
 			<key>PayloadType</key>
 			<string>com.apple.applicationaccess</string>
 			<key>PayloadUUID</key>
-			<string>2A7D875A-212C-4BED-8F2D-2072D1DDC140</string>
+			<string>6070CD82-CE76-4343-BD66-0D259A2E2E94</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 			<key>allowActivityContinuation</key>
@@ -84,7 +84,7 @@
 			<key>allowAutoCorrection</key>
 			<true/>
 			<key>allowAutomaticAppDownloads</key>
-			<false/>
+			<true/>
 			<key>allowBluetoothModification</key>
 			<true/>
 			<key>allowBookstore</key>
@@ -224,7 +224,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>E7A63106-BEC7-44D9-867F-3A355A26EAD8</string>
+	<string>155926F4-2110-4443-B40C-EDCF7B606C03</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
