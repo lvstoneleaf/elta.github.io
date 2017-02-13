@@ -5,7 +5,7 @@ POSTDATE=$(date +"%Y-%m-%d %H:%M:%S+00:00")
 CDATE=$(date +%Y-%m-%d)
 # DATE=$(date +%Y-%m-%d-%H-%M-%S)
 
-MD_EDITOR=macdown
+MD_EDITOR=vi
 
 
 function run()
