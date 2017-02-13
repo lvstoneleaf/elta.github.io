@@ -1,0 +1,12 @@
+README.md:Hello everyone, welcome to Elta's Blog.
+README.md:This project is blog project, created by Elta.
+_config.yml:title: Elta's Blog
+_config.yml:description: Elta's Blog, powered by Jekyll...
+_layouts/default.html:    <meta name="description" content="{{ page.description }} - Elta era">
+_layouts/default.html:    <meta name="author" content="Elta Era, email: elta.era@gmail.com">
+_layouts/default.html:            Elta's Blog
+_layouts/post.html:<a href="{{ site.github.url }}/{{ page.url }}"> 转自Elta 的博客：{{ site.github.url }}/{{ page.url }}</a>
+index.html:title: "Elta's Blog"
+index.html:description: "Elta's blog, enjoy world, touch anything! Try everything!"
+index.html:	Elta's Blog
+sitemap.xml:author: Elta Era
